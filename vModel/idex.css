@@ -1,0 +1,95 @@
+body {
+  font-family: Monospace;
+  background: #222;
+  color: #fff;
+  margin: 0px;
+}
+h3 {
+  font-weight: normal;
+}
+#info {
+  color: #fff;
+  position: absolute;
+  top: 10px;
+  width: 50%;
+  text-align: center;
+  z-index: 100;
+  display: block;
+}
+#info a {
+  color: #75ddc1;
+  font-weight: bold;
+}
+
+
+.cardcall {
+  margin: 10px;
+  color: rgb(0 225 255);
+  background: black;
+  /* background: border-box; */
+  border-color: black;
+  font-weight: bold;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.cardinfo {
+  cursor: pointer;
+  height: auto;
+  margin: 20px;
+  background: #000000a8;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.cardinfo h1 {
+  font-size: x-large;
+  text-decoration: underline;
+  margin: 10px;
+}
+
+.cardcontainer {
+display: grid;
+grid-template-columns: repeat(4, 1fr);
+margin: 60px 100px;
+margin-bottom: 60vh;
+}
+
+.app-image {
+  display: flex;
+  justify-content: center;
+}
+
+.app-image img {
+  width: 80%;
+}
+
+.phonecontainer {
+  display: grid;
+  grid-template-rows: (1fr, 1fr);
+}
+
+#phone {
+  position: absolute;
+  top: 60px;
+}
+
+#phone canvas {
+  height: 700px;
+}
+
+@media screen and (max-width: 800px) {
+  .cardcontainer {
+    grid-template-columns: repeat(1, 1fr);
+    margin: 10px;
+    margin-bottom: 0px;
+  }
+  #phone {
+    display: none;
+  }
+}
+  
